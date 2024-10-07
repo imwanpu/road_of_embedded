@@ -1,0 +1,37 @@
+C51 COMPILER V9.54   LESSON2_LED                                                           10/07/2024 19:38:27 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE LESSON2_LED
+OBJECT MODULE PLACED IN .\Objects\lesson2_LED.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE lesson2_LED.c OPTIMIZE(0,SPEED) BROWSE INCDIR(..\01-STM89C52) DEBUG OBJE
+                    -CTEXTEND PRINT(.\Listings\lesson2_LED.lst) TABS(2) OBJECT(.\Objects\lesson2_LED.obj)
+
+line level    source
+
+   1          #include <reg52.h>
+   2          sbit LED=P0^0;
+   3          
+   4          void lesson2_LED()
+   5          {
+   6   1        long i;
+   7   1        while(1){
+   8   2          LED = 1;
+   9   2          for(i=0;i<30000;i++);
+  10   2          LED = 0;
+  11   2          for(i=0;i<30000;i++);
+  12   2        };
+  13   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    144    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
