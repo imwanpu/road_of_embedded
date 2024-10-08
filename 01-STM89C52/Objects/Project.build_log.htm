@@ -19,19 +19,23 @@ CPU DLL:         S8051.DLL V3.100.0.0
 Dialog DLL:      DP51.DLL V2.62.0.1 
 <h2>Project:</h2>
 D:\road_of_embedded\01-STM89C52\Project.uvproj
-Project File Date:  10/07/2024
+Project File Date:  10/09/2024
 
 <h2>Output:</h2>
 Rebuild target 'Target 1'
 assembling STARTUP.A51...
 compiling lesson2_LED.c...
 compiling main.c...
-main.c(4): warning C206: 'lesson2_LED': missing function-prototype
-main.c(5): warning C290: missing return value
+main.c(5): warning C315: unknown #directive 'lesson'
+main.c(6): warning C315: unknown #directive 'lesson2_LED'
+main.c(9): warning C290: missing return value
+compiling utils.c...
 linking...
-Program Size: data=13.0 xdata=0 code=185
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LESSON2_LED?LESSON2_LED
+Program Size: data=15.0 xdata=0 code=202
 creating hex file from ".\Objects\Project"...
-".\Objects\Project" - 0 Error(s), 2 Warning(s).
+".\Objects\Project" - 0 Error(s), 4 Warning(s).
 Build Time Elapsed:  00:00:00
 </pre>
 </body>

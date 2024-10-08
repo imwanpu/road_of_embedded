@@ -1,5 +1,6 @@
 ".\Objects\STARTUP.obj",
 ".\Objects\lesson2_LED.obj",
-".\Objects\main.obj" 
+".\Objects\main.obj",
+".\Objects\utils.obj" 
 TO ".\Objects\Project" 
 PRINT(".\Listings\Project.m51") RAMSIZE(256) 
